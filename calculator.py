@@ -1,5 +1,6 @@
 import time
 
+#Operaciones
 def plus(num1, num2):
     result = num1 + num2
     print(f"La suma de {num1} + {num2} es: {result}")
@@ -16,6 +17,7 @@ def divide(num1, num2):
     result = num1 / num2
     print(f"La división de {num1} / {num2} es: {result}")
 
+#Menu simple
 menu = input("""
             ...Bienvenido...
                 
@@ -30,18 +32,35 @@ menu = input("""
         
         Seleción: """)
 
-if menu == 1:
-    pass
+#Interacción con el usuario
+if menu == "1":
+    x = int(input("\nEliga un numero: "))
+    y = int(input("\nEliga un numero: "))
+    print("")
+    plus(x, y)
 
-elif menu == 2:
-    pass
+elif menu == "2":
+    x = int(input("\nEliga un numero: "))
+    y = int(input("\nEliga un numero: "))
+    print("")
+    less(x, y)
 
-elif menu == 3:
-    pass
+elif menu == "3":
+    x = int(input("\nEliga un numero: "))
+    y = int(input("\nEliga un numero: "))
+    print("")
+    times(x, y)
 
-elif menu == 4:
-    pass
+elif menu == "4":
+    x = int(input("\nEliga un numero: "))
+    y = int(input("\nEliga un numero: "))
+    print("")
+    divide(x, y)
 
 elif menu == "exit":
     print("\n...Saliendo...\n")
-    time.sleep(5)
+    time.sleep(3)
+
+else:
+    print("\n...Saliendo...\n")
+    time.sleep(3)
