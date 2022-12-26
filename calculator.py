@@ -19,7 +19,7 @@ def divide(num1, num2):
     
 def potencia(num1, num2):
     result = num1 ** num2
-    print(f"La potencia de {num1} a la {num2} es: {result}"
+    print(f"La potencia de {num1} a la {num2} es: {result}")
 
 #Menu simple
 menu = input("""
@@ -31,6 +31,7 @@ menu = input("""
         2)Resta
         3)Multiplicación
         4)División
+        5)Potencia
         
         Escribe -exit- para salir
         
@@ -60,6 +61,12 @@ elif menu == "4":
     y = int(input("\nEliga un numero: "))
     print("")
     divide(x, y)
+    
+elif menu == "5":
+    x = int(input("\nEliga un numero: "))
+    y = int(input("\nEliga una potencia: "))
+    print("")
+    potencia(x, y)
 
 elif menu == "exit":
     print("\n...Saliendo...\n")
