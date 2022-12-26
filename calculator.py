@@ -1,4 +1,5 @@
 import time
+import math
 
 #Operaciones
 def plus(num1, num2):
@@ -17,7 +18,7 @@ def divide(num1, num2):
     result = num1 / num2
     print(f"La división de {num1} / {num2} es: {result}")
     
-def potencia(num1, num2):
+def exponent(num1, num2):
     result = num1 ** num2
     print(f"La potencia de {num1} a la {num2} es: {result}")
 
@@ -32,6 +33,7 @@ menu = input("""
         3)Multiplicación
         4)División
         5)Potencia
+        6)Raiz Cuadrada
         
         Escribe -exit- para salir
         
@@ -66,7 +68,12 @@ elif menu == "5":
     x = int(input("\nEliga un numero: "))
     y = int(input("\nEliga una potencia: "))
     print("")
-    potencia(x, y)
+    exponent(x, y)
+
+elif menu == "6":
+    x = float(input("\nEliga un numero: "))
+    result = math.sqrt(x)
+    print(f"La raiz cudrada de {x} es: {result}")
 
 elif menu == "exit":
     print("\n...Saliendo...\n")
