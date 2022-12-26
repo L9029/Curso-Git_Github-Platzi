@@ -16,6 +16,10 @@ def times(num1, num2):
 def divide(num1, num2):
     result = num1 / num2
     print(f"La división de {num1} / {num2} es: {result}")
+    
+def potencia(num1, num2):
+    result = num1 ** num2
+    print(f"La potencia de {num1} a la {num2} es: {result}"
 
 #Menu simple
 menu = input("""
